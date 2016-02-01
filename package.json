@@ -1,0 +1,32 @@
+{
+  "name": "emoji-parser",
+  "version": "0.0.1",
+  "description": "Parse emoji from strings",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "pretest": "npm run build",
+    "test": "ava"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronhunter/emoji-parser.git"
+  },
+  "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cameronhunter/emoji-parser/issues"
+  },
+  "homepage": "https://github.com/cameronhunter/emoji-parser#readme",
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-stage-1": "^6.3.13",
+    "rollup": "^0.25.2",
+    "rollup-plugin-babel": "^2.3.9",
+    "rollup-plugin-pegjs": "^2.0.0"
+  }
+}
