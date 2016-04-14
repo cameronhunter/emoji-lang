@@ -1,5 +1,5 @@
 {
-  "name": "emoji-parser",
+  "name": "emoji-lang",
   "version": "1.0.0",
   "description": "Parse emoji from strings",
   "main": "build/index.speed.min.js",
