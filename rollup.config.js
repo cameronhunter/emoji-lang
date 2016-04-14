@@ -13,6 +13,7 @@ export default {
   entry: 'src/grammar.pegjs',
   dest,
   format: 'cjs',
+  sourceMap: !isProduction,
   plugins: nonNull([
     pegjs({
       optimize
