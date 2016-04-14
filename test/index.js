@@ -46,3 +46,15 @@ test('Empty text', t => {
 
   t.deepEqual(actual, expected);
 });
+
+test('Emoji with skin tone modifiers', t => {
+  const actual = parser.parse("👍🏻");
+  const expected = {
+    text: "👍🏻",
+    emoji: [
+      { character: "👍🏻", indices: [0, 4] }
+    ]
+  };
+
+  t.deepEqual(actual, expected);
+});

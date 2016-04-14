@@ -39,7 +39,8 @@ Regional_Indicator_Symbol
 
 // https://en.wikipedia.org/wiki/Miscellaneous_Symbols_and_Pictographs
 Miscellaneous_Symbols_and_Pictographs
-  = "\uD83C" [\uDF00-\uDF21] // U+1F300 - U+1F321
+  = Miscellaneous_Symbols_and_Pictographs_Diversity Fitzpatrick_Modifier
+  / "\uD83C" [\uDF00-\uDF21] // U+1F300 - U+1F321
   / "\uD83C" [\uDF24-\uDF93] // U+1F324 - U+1F393
   / "\uD83C" [\uDF96-\uDF97] // U+1F396 - U+1F397
   / "\uD83C" [\uDF99-\uDF9B] // U+1F399 - U+1F39B
@@ -68,6 +69,24 @@ Miscellaneous_Symbols_and_Pictographs
   / "\uD83D" "\uDDEF" // U+1F5EF
   / "\uD83D" "\uDDF3" // U+1F5F3
   / "\uD83D" [\uDDFA-\uDDFF] // U+1F5FA - U+1F5FF
+
+// https://en.wikipedia.org/wiki/Miscellaneous_Symbols_and_Pictographs#Diversity
+Miscellaneous_Symbols_and_Pictographs_Diversity
+  = "\uD83C" "\uDF85"
+  / "\uD83C" ("\uDFC3" / "\uDFC4")
+  / "\uD83C" ("\uDFCA" / "\uDFCB")
+  / "\uD83D" ("\uDC42" / "\uDC43")
+  / "\uD83D" [\uDC46-\uDC50]
+  / "\uD83D" [\uDC66-\uDC69]
+  / "\uD83D" "\uDC6E"
+  / "\uD83D" [\uDC70-\uDC78]
+  / "\uD83D" "\uDC7C"
+  / "\uD83D" [\uDC81-\uDC83]
+  / "\uD83D" [\uDC85-\uDC87]
+  / "\uD83D" "\uDCAA"
+  / "\uD83D" "\uDD75"
+  / "\uD83D" "\uDD90"
+  / "\uD83D" ("\uDD95" / "\uDD96")
 
 // https://en.wikipedia.org/wiki/Supplemental_Symbols_and_Pictographs
 Supplemental_Symbols_and_Pictographs
@@ -205,3 +224,7 @@ Playing_cards
 // https://en.wikipedia.org/wiki/Supplemental_Arrows-B
 Supplemental_ArrowsB
   = [\u2934-\u2935] // U+2934 - U+2935
+
+// https://en.wikipedia.org/wiki/Fitzpatrick_scale#Unicode
+Fitzpatrick_Modifier
+  = "\uD83C" [\uDFFB-\uDFFF] // U+1F3FB – U+1F3FF
