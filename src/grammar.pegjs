@@ -114,7 +114,13 @@ Transport_and_Map_Symbols
 
 // https://en.wikipedia.org/wiki/Miscellaneous_Symbols
 Miscellaneous_Symbols
-  = [\u2600-\u26FF] // U+2600 - U+26FF
+  = Miscellaneous_Symbols_Diversity Fitzpatrick_Modifier
+  / [\u2600-\u26FF] // U+2600 - U+26FF
+
+// https://en.wikipedia.org/wiki/Miscellaneous_Symbols#Diversity
+Miscellaneous_Symbols_Diversity
+  = "\u261D"
+  / "\u26F9"
 
 // https://en.wikipedia.org/wiki/Dingbat#Emoji
 Dingbats
