@@ -1,5 +1,16 @@
+{
+  const indices = ({ start, end }) => ({ indices: [start.offset, end.offset] });
+}
+
 start
-  = ($(Emoji))*
+  = parts:(EmojiWithIndicies / Other)*
+    { return { text: text(), emoji: parts.filter(x => !!x) }; }
+
+EmojiWithIndicies
+  = Emoji { return { character: text(), ...indices(location()) } }
+
+Other
+  = . { return null; }
 
 // https://en.wikipedia.org/wiki/Emoji#Unicode_blocks
 Emoji "emoji"

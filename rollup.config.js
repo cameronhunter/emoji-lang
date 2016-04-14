@@ -7,6 +7,6 @@ export default {
   format: "cjs",
   plugins: [
     pegjs(),
-    babel()
+    babel({ babelrc: false, presets: ['es2015-rollup', 'stage-1'] })
   ]
 }
