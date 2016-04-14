@@ -94,7 +94,13 @@ Supplemental_Symbols_and_Pictographs
 
 // https://en.wikipedia.org/wiki/Emoticons_(Unicode_block)
 Emoticons
-  = "\uD83D" [\uDE00-\uDE4F] // U+1F600 - U+1F64F
+  = Emoticons_Diversity Fitzpatrick_Modifier
+  / "\uD83D" [\uDE00-\uDE4F] // U+1F600 - U+1F64F
+
+// https://en.wikipedia.org/wiki/Emoticons_(Unicode_block)#Diversity
+Emoticons_Diversity
+  = "\uD83D" [\uDE45-\uDE47]
+  / "\uD83D" [\uDE4B-\uDE4F]
 
 // https://en.wikipedia.org/wiki/Transport_and_Map_Symbols
 Transport_and_Map_Symbols
