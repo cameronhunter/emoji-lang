@@ -17,14 +17,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cameronhunter/emoji-parser.git"
+    "url": "git+https://github.com/cameronhunter/emoji-lang.git"
   },
   "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cameronhunter/emoji-parser/issues"
+    "url": "https://github.com/cameronhunter/emoji-lang/issues"
   },
-  "homepage": "https://github.com/cameronhunter/emoji-parser#readme",
+  "homepage": "https://github.com/cameronhunter/emoji-lang#readme",
   "devDependencies": {
     "ava": "^0.14.0",
     "babel-preset-es2015-rollup": "^1.1.1",
