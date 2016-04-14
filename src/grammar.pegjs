@@ -112,7 +112,8 @@ Miscellaneous_Symbols
 
 // https://en.wikipedia.org/wiki/Dingbat#Emoji
 Dingbats
-  = "\u2712" // U+2712
+  = Dingbats_Diversity Fitzpatrick_Modifier
+  / "\u2712" // U+2712
   / "\u2714" // U+2714
   / "\u2716" // U+2716
   / "\u271D" // U+271D
@@ -134,6 +135,10 @@ Dingbats
   / "\u2705" // U+2705
   / [\u2708-\u270D] // U+2708 - U+270D
   / "\u270F" // U+270F
+
+// https://en.wikipedia.org/wiki/Dingbat#Diversity
+Dingbats_Diversity
+  = [\u270A-\u270D]
 
 // https://en.wikipedia.org/wiki/Arrows_(Unicode_block)
 Arrows
