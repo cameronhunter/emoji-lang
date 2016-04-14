@@ -90,7 +90,12 @@ Miscellaneous_Symbols_and_Pictographs_Diversity
 
 // https://en.wikipedia.org/wiki/Supplemental_Symbols_and_Pictographs
 Supplemental_Symbols_and_Pictographs
-  = "\uD83E" [\uDD00-\uDDFF] // U+1F900 - U+1F9FF
+  = Supplemental_Symbols_and_Pictographs_Diversity Fitzpatrick_Modifier
+  / "\uD83E" [\uDD00-\uDDFF] // U+1F900 - U+1F9FF
+
+// https://en.wikipedia.org/wiki/Supplemental_Symbols_and_Pictographs#Diversity
+Supplemental_Symbols_and_Pictographs_Diversity
+  = "\uD83E" "\uDD18"
 
 // https://en.wikipedia.org/wiki/Emoticons_(Unicode_block)
 Emoticons
@@ -104,13 +109,20 @@ Emoticons_Diversity
 
 // https://en.wikipedia.org/wiki/Transport_and_Map_Symbols
 Transport_and_Map_Symbols
-  = "\uD83D" [\uDE80-\uDEC5] // U+1F680 - U+1F6C5
+  = Transport_and_Map_Symbols_Diversity Fitzpatrick_Modifier
+  / "\uD83D" [\uDE80-\uDEC5] // U+1F680 - U+1F6C5
   / "\uD83D" [\uDECB-\uDED0] // U+1F6CB - U+1F6D0
   / "\uD83D" [\uDEE0-\uDEE5] // U+1F6E0 - U+1F6E5
   / "\uD83D" "\uDEE9" // U+1F6E9
   / "\uD83D" [\uDEEB-\uDEEC] // U+1F6EB - U+1F6EC
   / "\uD83D" "\uDEF0" // U+1F6F0
   / "\uD83D" "\uDEF3" // U+1F6F3
+
+// https://en.wikipedia.org/wiki/Transport_and_Map_Symbols#Diversity
+Transport_and_Map_Symbols_Diversity
+  = "\uD83D" "\uDEA3"
+  / "\uD83D" [\uDEB4-\uDEB6]
+  / "\uD83D" "\uDEC0"
 
 // https://en.wikipedia.org/wiki/Miscellaneous_Symbols
 Miscellaneous_Symbols
