@@ -563,12 +563,6 @@ webpackJsonp([1],{
 	            { href: 'http://github.com/cameronhunter/emoji-lang' },
 	            'emoji-lang'
 	          ),
-	          ' and ',
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'http://codemirror.net/' },
-	            'CodeMirror'
-	          ),
 	          ' | ',
 	          _react2.default.createElement(
 	            'a',
@@ -758,7 +752,7 @@ webpackJsonp([1],{
 
 
 	// module
-	exports.push([module.id, "._1DjH91jIp0h5O_h2cmVABR {\n  width: 100%;\n  height: 100%;\n  border: none;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  outline: 0;\n  font-size: 14px;\n}\n\n._1DjH91jIp0h5O_h2cmVABR:focus {\n  outline: 0;\n}\n", ""]);
+	exports.push([module.id, "._1DjH91jIp0h5O_h2cmVABR {\n  width: 100%;\n  height: 100%;\n  border: none;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  outline: 0;\n  font-size: 14px;\n  box-sizing: border-box;\n}\n\n._1DjH91jIp0h5O_h2cmVABR:focus {\n  outline: 0;\n}\n", ""]);
 
 	// exports
 	exports.locals = {
