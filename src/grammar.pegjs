@@ -12,8 +12,7 @@ Character
 
 // https://en.wikipedia.org/wiki/Emoji#Unicode_blocks
 Emoji "emoji"
-  = Regional_Indicator_Symbol
-  / Miscellaneous_Symbols_and_Pictographs
+  = Miscellaneous_Symbols_and_Pictographs
   / Supplemental_Symbols_and_Pictographs
   / Emoticons
   / Transport_and_Map_Symbols
@@ -34,10 +33,6 @@ Emoji "emoji"
   / Miscellaneous_Technical
   / Playing_cards
   / Supplemental_ArrowsB
-
-// https://en.wikipedia.org/wiki/Regional_Indicator_Symbol
-Regional_Indicator_Symbol
-  = "\uD83C" [\uDDE6-\uDDFF] "\uD83C" [\uDDE6-\uDDFF] // U+1F1E6 - U+1F1FF
 
 // https://en.wikipedia.org/wiki/Miscellaneous_Symbols_and_Pictographs
 Miscellaneous_Symbols_and_Pictographs
@@ -165,11 +160,16 @@ CJK_Symbols_and_Punctuation
 
 // https://en.wikipedia.org/wiki/Enclosed_Alphanumeric_Supplement
 Enclosed_Alphanumeric_Supplement
-  = "\uD83C" [\uDD70-\uDD71] // U+1F170 - U+1F171
+  = Regional_Indicator_Symbol
+  / "\uD83C" [\uDD70-\uDD71] // U+1F170 - U+1F171
   / "\uD83C" [\uDD7E-\uDD7F] // U+1F17E - U+1F17F
   / "\uD83C" "\uDD8E" // U+1F18E
   / "\uD83C" [\uDD91-\uDD9A] // U+1F191 - U+1F19A
   / "\uD83C" [\uDDE6-\uDDFF] // U+1F1E6 - U+1F1FF
+
+// https://en.wikipedia.org/wiki/Regional_Indicator_Symbol
+Regional_Indicator_Symbol
+  = "\uD83C" [\uDDE6-\uDDFF] "\uD83C" [\uDDE6-\uDDFF] // U+1F1E6 - U+1F1FF
 
 // https://en.wikipedia.org/wiki/Enclosed_Alphanumerics#Emoji
 Enclosed_Alphanumerics
