@@ -1,0 +1,46 @@
+.split-panel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.split-panel > .split-panel-item,
+.split-panel > .split-panel-divider,
+.split-panel > .split-panel-resize-hack-object {
+  position: absolute;
+}
+.split-panel > .split-panel-resize-hack-object {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+.split-panel > .split-panel-item {
+  overflow: auto;
+}
+.split-panel.split-panel-resizing > .split-panel-item {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.split-panel > .split-panel-divider {
+  background: #ddd;
+}
+.split-panel.horizontal > .split-panel-divider,
+.split-panel.horizontal > .split-panel-item {
+  height: 100%;
+}
+.split-panel.horizontal > .split-panel-divider {
+  cursor: ew-resize;
+  width: 5px;
+}
+.split-panel.vertical > .split-panel-divider,
+.split-panel.vertical > .split-panel-item {
+  width: 100%;
+}
+.split-panel.vertical > .split-panel-divider {
+  cursor: ns-resize;
+  height: 5px;
+}

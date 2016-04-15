@@ -3,7 +3,7 @@ import Editor from '../Editor';
 import Titled from '../Titled';
 
 export default props => (
-  <Titled title='Request'>
+  <Titled title='Input'>
     <Editor {...props} lineNumbers={false} />
   </Titled>
 );

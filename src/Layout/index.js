@@ -8,7 +8,7 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <div id="app" className={style.root}>
+      <div className={style.root}>
         <header className={style.header}>
           {this.props.title}
         </header>

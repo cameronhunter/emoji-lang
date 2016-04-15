@@ -15,7 +15,7 @@ export default {
     ]
   },
   output: {
-    path: path('build'),
+    path: path('assets'),
     filename: '[name].js',
     publicPath: '/assets'
   },
