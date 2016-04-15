@@ -43,35 +43,8 @@ Regional_Indicator_Symbol
 Miscellaneous_Symbols_and_Pictographs
   = Miscellaneous_Symbols_and_Pictographs_Sequences
   / Miscellaneous_Symbols_and_Pictographs_Diversity Fitzpatrick_Modifier
-  / "\uD83C" [\uDF00-\uDF21] // U+1F300 - U+1F321
-  / "\uD83C" [\uDF24-\uDF93] // U+1F324 - U+1F393
-  / "\uD83C" [\uDF96-\uDF97] // U+1F396 - U+1F397
-  / "\uD83C" [\uDF99-\uDF9B] // U+1F399 - U+1F39B
-  / "\uD83C" [\uDF9E-\uDFF0] // U+1F39E - U+1F3F0
-  / "\uD83C" [\uDFF3-\uDFF5] // U+1F3F3 - U+1F3F5
-  / [\uD83C-\uD83D] [\uDCFD-\uDFF7] // U+1F3F7 - U+1F4FD
-  / "\uD83D" [\uDCFF-\uDD3D] // U+1F4FF - U+1F53D
-  / "\uD83D" [\uDD49-\uDD4E] // U+1F549 - U+1F54E
-  / "\uD83D" [\uDD50-\uDD67] // U+1F550 - U+1F567
-  / "\uD83D" [\uDD6F-\uDD70] // U+1F56F - U+1F570
-  / "\uD83D" [\uDD73-\uDD79] // U+1F573 - U+1F579
-  / "\uD83D" "\uDD87" // U+1F587
-  / "\uD83D" [\uDD8A-\uDD8D] // U+1F58A - U+1F58D
-  / "\uD83D" "\uDD90" // U+1F590
-  / "\uD83D" [\uDD95-\uDD96] // U+1F595 - U+1F596
-  / "\uD83D" "\uDDA5" // U+1F5A5
-  / "\uD83D" "\uDDA8" // U+1F5A8
-  / "\uD83D" [\uDDB1-\uDDB2] // U+1F5B1 - U+1F5B2
-  / "\uD83D" "\uDDBC" // U+1F5BC
-  / "\uD83D" [\uDDC2-\uDDC4] // U+1F5C2 - U+1F5C4
-  / "\uD83D" [\uDDD1-\uDDD3] // U+1F5D1 - U+1F5D3
-  / "\uD83D" [\uDDDC-\uDDDE] // U+1F5DC - U+1F5DE
-  / "\uD83D" "\uDDE1" // U+1F5E1
-  / "\uD83D" "\uDDE3" // U+1F5E3
-  / "\uD83D" "\uDDE8" // U+1F5E8
-  / "\uD83D" "\uDDEF" // U+1F5EF
-  / "\uD83D" "\uDDF3" // U+1F5F3
-  / "\uD83D" [\uDDFA-\uDDFF] // U+1F5FA - U+1F5FF
+  / "\uD83C" [\uDF00-\uDFFA]
+  / "\uD83D" [\uDC00-\uDDFF]
 
 // https://en.wikipedia.org/wiki/Emoji#Joining
 Miscellaneous_Symbols_and_Pictographs_Sequences

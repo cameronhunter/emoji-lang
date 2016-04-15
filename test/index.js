@@ -116,3 +116,15 @@ test('Heart emoji variant', t => {
 
   t.deepEqual(actual, expected);
 });
+
+test('Elephant variant', t => {
+  const actual = parser.parse("\uD83D\uDC18");
+  const expected = {
+    text: "\uD83D\uDC18",
+    emoji: [
+      { character: "\uD83D\uDC18", indices: [0, 2] }
+    ]
+  };
+
+  t.deepEqual(actual, expected);
+});
