@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  background-color: rgb(232, 232, 232);
+  color: rgba(0, 0, 0, .40);
+  font-size: 20px;
+  line-height: 56px;
+  padding-left: 15px;
+  border-bottom: 1px solid #ddd;
+}
