@@ -82,3 +82,15 @@ test('Couple with heart sequence', t => {
 
   t.deepEqual(actual, expected);
 });
+
+test('Family sequence', t => {
+  const actual = parser.parse("\uD83D\uDC69\u200D\uD83D\uDC69\u200D\uD83D\uDC67\u200D\uD83D\uDC66");
+  const expected = {
+    text: "\uD83D\uDC69\u200D\uD83D\uDC69\u200D\uD83D\uDC67\u200D\uD83D\uDC66",
+    emoji: [
+      { character: "\uD83D\uDC69\u200D\uD83D\uDC69\u200D\uD83D\uDC67\u200D\uD83D\uDC66", indices: [0, 11] }
+    ]
+  };
+
+  t.deepEqual(actual, expected);
+});

@@ -37,28 +37,6 @@ Emoji "emoji"
 Regional_Indicator_Symbol
   = "\uD83C" [\uDDE6-\uDDFF] "\uD83C" [\uDDE6-\uDDFF] // U+1F1E6 - U+1F1FF
 
-Miscellaneous_Symbols_and_Pictographs_Sequences
-  = Kiss_Sequence
-  / Couple_With_Heart_Sequence
-
-Joiner "Zero width joiner"
-  = "\u200D"
-
-ManOrWoman
-  = "\uD83D" ("\uDC68" / "\uDC69") Fitzpatrick_Modifier?
-
-Heart
-  = "\u2764" "\uFE0F"?
-
-Kiss
-  = "\uD83D" "\uDC8B"
-
-Kiss_Sequence
-  = ManOrWoman Joiner Heart Joiner Kiss Joiner ManOrWoman
-
-Couple_With_Heart_Sequence
-  = ManOrWoman Joiner Heart Joiner ManOrWoman
-
 // https://en.wikipedia.org/wiki/Miscellaneous_Symbols_and_Pictographs
 Miscellaneous_Symbols_and_Pictographs
   = Miscellaneous_Symbols_and_Pictographs_Sequences
@@ -92,6 +70,13 @@ Miscellaneous_Symbols_and_Pictographs
   / "\uD83D" "\uDDEF" // U+1F5EF
   / "\uD83D" "\uDDF3" // U+1F5F3
   / "\uD83D" [\uDDFA-\uDDFF] // U+1F5FA - U+1F5FF
+
+// https://en.wikipedia.org/wiki/Emoji#Joining
+Miscellaneous_Symbols_and_Pictographs_Sequences
+  = Kiss_Sequence
+  / Couple_With_Heart_Sequence
+  / Family_Sequence
+  / Left_Eye_Speech_Bubble_Sequence
 
 // https://en.wikipedia.org/wiki/Miscellaneous_Symbols_and_Pictographs#Diversity
 Miscellaneous_Symbols_and_Pictographs_Diversity
@@ -280,3 +265,30 @@ Supplemental_ArrowsB
 // https://en.wikipedia.org/wiki/Fitzpatrick_scale#Unicode
 Fitzpatrick_Modifier
   = "\uD83C" [\uDFFB-\uDFFF] // U+1F3FB – U+1F3FF
+
+_ "Zero width joiner"
+  = "\u200D"
+
+ManOrWoman
+  = "\uD83D" ("\uDC68" / "\uDC69") Fitzpatrick_Modifier?
+
+BoyOrGirl
+  = "\uD83D" ("\uDC66" / "\uDC67") Fitzpatrick_Modifier?
+
+Heart
+  = "\u2764" "\uFE0F"?
+
+Kiss
+  = "\uD83D" "\uDC8B"
+
+Kiss_Sequence
+  = ManOrWoman _ Heart _ Kiss _ ManOrWoman
+
+Couple_With_Heart_Sequence
+  = ManOrWoman _ Heart _ ManOrWoman
+
+Family_Sequence
+  = ManOrWoman (_ ManOrWoman)? _ BoyOrGirl (_ BoyOrGirl)?
+
+Left_Eye_Speech_Bubble_Sequence
+  = "\uD83D" "\uDC41" _ "\uD83D" "\uDDE8"
