@@ -37,9 +37,32 @@ Emoji "emoji"
 Regional_Indicator_Symbol
   = "\uD83C" [\uDDE6-\uDDFF] "\uD83C" [\uDDE6-\uDDFF] // U+1F1E6 - U+1F1FF
 
+Miscellaneous_Symbols_and_Pictographs_Sequences
+  = Kiss_Sequence
+  / Couple_With_Heart_Sequence
+
+Joiner "Zero width joiner"
+  = "\u200D"
+
+ManOrWoman
+  = "\uD83D" ("\uDC68" / "\uDC69") Fitzpatrick_Modifier?
+
+Heart
+  = "\u2764" "\uFE0F"?
+
+Kiss
+  = "\uD83D" "\uDC8B"
+
+Kiss_Sequence
+  = ManOrWoman Joiner Heart Joiner Kiss Joiner ManOrWoman
+
+Couple_With_Heart_Sequence
+  = ManOrWoman Joiner Heart Joiner ManOrWoman
+
 // https://en.wikipedia.org/wiki/Miscellaneous_Symbols_and_Pictographs
 Miscellaneous_Symbols_and_Pictographs
-  = Miscellaneous_Symbols_and_Pictographs_Diversity Fitzpatrick_Modifier
+  = Miscellaneous_Symbols_and_Pictographs_Sequences
+  / Miscellaneous_Symbols_and_Pictographs_Diversity Fitzpatrick_Modifier
   / "\uD83C" [\uDF00-\uDF21] // U+1F300 - U+1F321
   / "\uD83C" [\uDF24-\uDF93] // U+1F324 - U+1F393
   / "\uD83C" [\uDF96-\uDF97] // U+1F396 - U+1F397

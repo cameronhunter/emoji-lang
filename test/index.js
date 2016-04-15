@@ -48,11 +48,35 @@ test('Empty text', t => {
 });
 
 test('Emoji with skin tone modifiers', t => {
-  const actual = parser.parse("👍🏻");
+  const actual = parser.parse("\uD83D\uDC4D\uD83C\uDFFB");
   const expected = {
-    text: "👍🏻",
+    text: "\uD83D\uDC4D\uD83C\uDFFB",
     emoji: [
-      { character: "👍🏻", indices: [0, 4] }
+      { character: "\uD83D\uDC4D\uD83C\uDFFB", indices: [0, 4] }
+    ]
+  };
+
+  t.deepEqual(actual, expected);
+});
+
+test('Kiss sequence', t => {
+  const actual = parser.parse("\uD83D\uDC69\u200D\u2764\uFE0F\u200D\uD83D\uDC8B\u200D\uD83D\uDC68");
+  const expected = {
+    text: "\uD83D\uDC69\u200D\u2764\uFE0F\u200D\uD83D\uDC8B\u200D\uD83D\uDC68",
+    emoji: [
+      { character: "\uD83D\uDC69\u200D\u2764\uFE0F\u200D\uD83D\uDC8B\u200D\uD83D\uDC68", indices: [0, 11] }
+    ]
+  };
+
+  t.deepEqual(actual, expected);
+});
+
+test('Couple with heart sequence', t => {
+  const actual = parser.parse("\uD83D\uDC68\u200D\u2764\uFE0F\u200D\uD83D\uDC68");
+  const expected = {
+    text: "\uD83D\uDC68\u200D\u2764\uFE0F\u200D\uD83D\uDC68",
+    emoji: [
+      { character: "\uD83D\uDC68\u200D\u2764\uFE0F\u200D\uD83D\uDC68", indices: [0, 8] }
     ]
   };
 
