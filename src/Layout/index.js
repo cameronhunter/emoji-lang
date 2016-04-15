@@ -16,7 +16,7 @@ export default class Layout extends React.Component {
           {this.props.children}
         </main>
         <footer className={style.footer}>
-          Built using <a href="http://github.com/cameronhunter/emoji-lang">emoji-lang</a> and <a href="http://codemirror.net/">CodeMirror</a> | <a href="https://github.com/cameronhunter/emoji-lang/tree/gh-pages">GitHub</a>
+          Built using <a href="http://github.com/cameronhunter/emoji-lang">emoji-lang</a> | <a href="https://github.com/cameronhunter/emoji-lang/tree/gh-pages">GitHub</a>
         </footer>
       </div>
     );

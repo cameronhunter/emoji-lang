@@ -1,6 +1,7 @@
 .root {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .title {
@@ -10,4 +11,9 @@
   line-height: 56px;
   padding-left: 15px;
   border-bottom: 1px solid #ddd;
+}
+
+.content {
+  flex-grow: 1;
+  position: relative;
 }

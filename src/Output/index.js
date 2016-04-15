@@ -1,5 +1,4 @@
 import React from 'react';
-import Editor from '../Editor';
 import Titled from '../Titled';
 import Parser from 'emoji-lang';
 import Try from 'promise-try';
@@ -20,7 +19,7 @@ export default class Output extends React.Component {
   render() {
     return (
       <Titled title='Output'>
-        <Editor {...this.props} value={this.state.value} lineNumbers={false} readOnly={true} />
+        <pre>{this.state.value}</pre>
       </Titled>
     );
   }
