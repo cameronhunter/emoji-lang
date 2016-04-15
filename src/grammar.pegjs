@@ -3,7 +3,9 @@ start
     { return { text: text(), emoji: characters.filter(x => !!x) }; }
 
 Character
-  = Emoji !Text_Variant
+  = Emoji Text_Variant
+    { return null; }
+  / Emoji Emoji_Variant?
     { return { character: text(), indices: [location().start.offset, location().end.offset] }; }
   / .
     { return null; }
