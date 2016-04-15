@@ -94,3 +94,13 @@ test('Family sequence', t => {
 
   t.deepEqual(actual, expected);
 });
+
+test('Heart text variant', t => {
+  const actual = parser.parse("\u2764\uFE0E");
+  const expected = {
+    text: "\u2764\uFE0E",
+    emoji: []
+  };
+
+  t.deepEqual(actual, expected);
+});

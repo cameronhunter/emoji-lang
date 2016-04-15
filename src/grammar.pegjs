@@ -3,7 +3,7 @@ start
     { return { text: text(), emoji: characters.filter(x => !!x) }; }
 
 Character
-  = Emoji
+  = Emoji !Text_Variant
     { return { character: text(), indices: [location().start.offset, location().end.offset] }; }
   / .
     { return null; }
@@ -269,6 +269,12 @@ Fitzpatrick_Modifier
 _ "Zero width joiner"
   = "\u200D"
 
+Text_Variant
+  = "\uFE0E"
+
+Emoji_Variant
+  = "\uFE0F"
+
 ManOrWoman
   = "\uD83D" ("\uDC68" / "\uDC69") Fitzpatrick_Modifier?
 
@@ -276,7 +282,7 @@ BoyOrGirl
   = "\uD83D" ("\uDC66" / "\uDC67") Fitzpatrick_Modifier?
 
 Heart
-  = "\u2764" "\uFE0F"?
+  = "\u2764" Emoji_Variant
 
 Kiss
   = "\uD83D" "\uDC8B"
