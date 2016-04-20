@@ -1,6 +1,6 @@
 {
   "name": "emoji-lang",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Parse emoji from strings",
   "main": "build/index.speed.min.js",
   "scripts": {
