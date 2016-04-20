@@ -128,3 +128,35 @@ test('Elephant variant', t => {
 
   t.deepEqual(actual, expected);
 });
+
+test('Number with combining enclosing keycap', t => {
+  const actual = parser.parse("\u0031\uFE0F\u20E3");
+  const expected = {
+    text: "\u0031\uFE0F\u20E3",
+    emoji: [
+      { character: "\u0031\uFE0F\u20E3", indices: [0, 3] }
+    ]
+  }
+
+  t.deepEqual(actual, expected);
+});
+
+test('Emoji variant number without combining enclosing keycap', t => {
+  const actual = parser.parse("\u0031\uFE0F");
+  const expected = {
+    text: "\u0031\uFE0F",
+    emoji: []
+  }
+
+  t.deepEqual(actual, expected);
+});
+
+test('Text variant number with combining enclosing keycap', t => {
+  const actual = parser.parse("\u0031\uFE0E\u20E3");
+  const expected = {
+    text: "\u0031\uFE0E\u20E3",
+    emoji: []
+  }
+
+  t.deepEqual(actual, expected);
+});

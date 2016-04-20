@@ -149,6 +149,9 @@ Arrows
 
 // https://en.wikipedia.org/wiki/Basic_Latin_(Unicode_block)#Emoji
 Basic_Latin
+  = Basic_Latin_Characters Emoji_Variant? Combining_Keycap
+
+Basic_Latin_Characters
   = "\u0023" // U+0023
   / "\u002A" // U+002A
   / [\u0030-\u0039] // U+0030 - U+0039
@@ -249,6 +252,9 @@ Text_Variant
 
 Emoji_Variant
   = "\uFE0F"
+
+Combining_Keycap
+  = "\u20E3"
 
 ManOrWoman
   = "\uD83D" ("\uDC68" / "\uDC69") Fitzpatrick_Modifier?
