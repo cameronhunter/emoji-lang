@@ -19,7 +19,7 @@
     "classnames": "^2.2.3",
     "css-loader": "^0.23.1",
     "cssnext": "^1.8.4",
-    "emoji-lang": "^1.0.6",
+    "emoji-lang": "^1.0.7",
     "postcss-loader": "^0.8.2",
     "promise-try": "^1.0.1",
     "react": "^15.0.1",

@@ -8,9 +8,7 @@ export default {
   entry: {
     app: path('src', 'index.js'),
     vendor: [
-      'codemirror/mode/javascript/javascript',
       'react',
-      'react-code-mirror',
       'react-dom'
     ]
   },
